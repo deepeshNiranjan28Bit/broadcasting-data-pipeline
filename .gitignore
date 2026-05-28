@@ -1,0 +1,41 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files
+.env
+.env.*
+
+# Mac
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Data folders
+data/bronze/
+data/silver/
+data/gold/
+data/rejected/
+data/raw/
+
+# Large/generated files
+*.parquet
+*.jsonl
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Airflow local files
+airflow/logs/
+airflow/plugins/
+airflow/config/
+
+# IDE
+.vscode/settings.json
