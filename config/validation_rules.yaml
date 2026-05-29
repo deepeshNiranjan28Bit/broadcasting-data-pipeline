@@ -1,0 +1,41 @@
+valid_workflow_statuses:
+  - INITIATED
+  - VALIDATED
+  - APPROVED
+  - REJECTED
+  - FAILED
+
+required_columns:
+  vendors:
+    - vendor_id
+    - vendor_name
+    - vendor_type
+    - is_active
+    - created_at
+
+  devices:
+    - device_id
+    - vendor_id
+    - device_type
+    - whitelisted
+    - region
+    - created_at
+
+  content_metadata:
+    - content_id
+    - vendor_id
+    - title
+    - language
+    - category
+    - duration_sec
+    - created_at
+
+  workflow_events:
+    - event_id
+    - workflow_id
+    - vendor_id
+    - device_id
+    - content_id
+    - status
+    - event_time
+    - source_system
